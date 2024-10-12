@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="ConversorDeUnidades.MainPage">
+
+    <ContentPage Title="Distância">
+        <StackLayout>
+            <Label Text="Conversor de Distância" HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" />
+            <Label Text="Digite a Distância que deseja converter:" HorizontalOptions="Center"/>
+            <Entry x:Name="distanciaEntry" Placeholder="Distância" Keyboard="Numeric"/>
+
+            <Picker x:Name="DistanciaOrigem" Title="De">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Quilômetros</x:String>
+                        <x:String>Metros</x:String>
+                        <x:String>Centímetros</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Picker x:Name="DistanciaDestino" Title="Para">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Quilometros</x:String>
+                        <x:String>Metros</x:String>
+                        <x:String>Centímetros</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Button Text="Converter" Clicked="CalcularDistancia" FontSize="20" CornerRadius="15" BackgroundColor="#0025A2" TextColor="White" Margin="10"/>
+            <Label x:Name="resultadoDistancia" Text="Resultado:" FontSize="20"/>
+        </StackLayout>
+    </ContentPage>
+
+    
+    
+    
+    
+    <ContentPage Title="Peso">
+        <StackLayout>
+            <Label Text="Conversor de Pesos" HorizontalOptions="Center" VerticalOptions="Center" FontSize="20"/>
+            <Label Text="Digite o Peso que deseja converter:" HorizontalOptions="Center"/>
+            <Entry x:Name="pesoEntry" Placeholder="Peso" Keyboard="Numeric"/>
+
+            <Picker x:Name="unidadeOrigemPeso" Title="De">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Kg</x:String>
+                        <x:String>G</x:String>
+                        <x:String>Lb</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Picker x:Name="unidadeDestinoPeso" Title="Para">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Kg</x:String>
+                        <x:String>G</x:String>
+                        <x:String>Lb</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Button Text="Converter" Clicked="CalcularPeso" FontSize="20" FontAttributes="Italic" CornerRadius="15" BackgroundColor="#0025A2" TextColor="White"/>
+            <Label x:Name="resultadoPeso" Text="Resultado:" FontSize="20"/>
+        </StackLayout>
+    </ContentPage>
+
+    
+    
+    <ContentPage Title="Temperatura">
+        <StackLayout>
+            <Label Text="Conversor de Temperaturas" HorizontalOptions="Center" VerticalOptions="Center" FontSize="20"/>
+            <Label Text="Digite a Temperatura que deseja converter:" HorizontalOptions="Center"/>
+            <Entry x:Name="temperaturaEntry" Placeholder="Temperatura" Keyboard="Numeric"/>
+
+            <Picker x:Name="unidadeOrigemTemperatura" Title="De">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Celsius</x:String>
+                        <x:String>Fahrenheit</x:String>
+                        <x:String>Kelvin</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Picker x:Name="unidadeDestinoTemperatura" Title="Para">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Celsius</x:String>
+                        <x:String>Fahrenheit</x:String>
+                        <x:String>Kelvin</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Button Text="Converter" Clicked="CalcularTemperatura" FontSize="20" FontAttributes="Italic" CornerRadius="15" BackgroundColor="#0025A2" TextColor="White"/>
+            <Label x:Name="resultadoTemperatura" Text="Resultado:" FontSize="20"/>
+        </StackLayout>
+    </ContentPage>
+
+</TabbedPage>

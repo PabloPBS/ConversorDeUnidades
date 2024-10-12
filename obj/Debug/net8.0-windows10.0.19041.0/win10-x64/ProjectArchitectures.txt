@@ -1,0 +1,1 @@
+C:\Users\ADM\source\repos\ConversorDeUnidades\ConversorDeUnidades\ConversorDeUnidades.csproj;x64
