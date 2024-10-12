@@ -64,7 +64,7 @@
                 </Picker.ItemsSource>
             </Picker>
 
-            <Button Text="Converter" Clicked="CalcularPeso" FontSize="20" FontAttributes="Italic" CornerRadius="15" BackgroundColor="#0025A2" TextColor="White"/>
+            <Button Text="Converter" Clicked="CalcularPeso" FontSize="20" CornerRadius="15" BackgroundColor="#0025A2" TextColor="White" Margin="10"/>
             <Label x:Name="resultadoPeso" Text="Resultado:" FontSize="20"/>
         </StackLayout>
     </ContentPage>
@@ -97,7 +97,7 @@
                 </Picker.ItemsSource>
             </Picker>
 
-            <Button Text="Converter" Clicked="CalcularTemperatura" FontSize="20" FontAttributes="Italic" CornerRadius="15" BackgroundColor="#0025A2" TextColor="White"/>
+            <Button Text="Converter" Clicked="CalcularTemperatura" FontSize="20" CornerRadius="15" BackgroundColor="#0025A2" TextColor="White" Margin="10"/>
             <Label x:Name="resultadoTemperatura" Text="Resultado:" FontSize="20"/>
         </StackLayout>
     </ContentPage>
